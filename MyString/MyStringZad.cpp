@@ -17,6 +17,16 @@ MyString::MyString(char* input)
 
 }
 
+MyString::MyString(const MyString& other)
+{
+	this->arr = new char[std::strlen(other.arr)];
+	for (int i = 0; i < (std::strlen(other.arr)); ++i)
+	{
+		this->arr[i] = other.arr[i];
+	}
+	this->arr[std::strlen(other.arr)] = '\0';
+}
+
 void MyString::print()
 {
 	int i = 0;
@@ -72,7 +82,7 @@ MyString MyString::firstWord()
 	{
 		tab[i] = arr[i];
 	}
-	tab[lengthOfWord + 1] = '\0'; 
+	tab[lengthOfWord] = '\0'; 
 
 	MyString newArr(tab); //wywołujemy konstruktor parametrowy i przekazujemy tablicę zawierającą pierwsze słowo
 	return newArr; //zwracamy ten nowy obiekt

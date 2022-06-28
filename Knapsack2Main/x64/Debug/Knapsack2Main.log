@@ -1,0 +1,5 @@
+﻿  Knapsack2.cpp
+C:\Users\Weronika Słowińska\OneDrive\Desktop\CPP\ObiektowośćĆwiczenia\Knapsack2Main\Knapsack2.cpp(50,10): error C2352: 'Shop::stealItem': illegal call of non-static member function
+C:\Users\Weronika Słowińska\OneDrive\Desktop\CPP\ObiektowośćĆwiczenia\Knapsack2Main\Knapsack2.cpp(13): message : see declaration of 'Shop::stealItem'
+  Knapsack2Main.cpp
+  Generating Code...
